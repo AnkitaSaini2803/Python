@@ -1,5 +1,8 @@
 '''The generator is used to generate the values one-by-one as the loop iterates
-over it.       25/1/2025
+over it.                                                           25/1/2025
+Yield is a keyword which is only used inside function and if used outside the function,
+syntax error will be raised. For eg : If you write yield inside loop, it will throw 
+error.
 '''
 def generator():
     for i in range(30):
