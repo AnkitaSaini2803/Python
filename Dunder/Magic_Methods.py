@@ -19,12 +19,20 @@ class Employee:
         return i
     
     def __str__(self):
-         return f"The name of HEAD of employee is {self.name},str"
+         return f"The name of HEAD of employee is {self.name}"
     
     def __repr__(self):
-        return f"The name of HEAD of employee is {self.name} ,repr"
+        return f"The name of HEAD of employee is {self.name}"
+        
     
     
     def __call__(self):
         print(f"I am good") 
-    
+
+# emp=Employee('Ankita Saini')
+# print(emp.name)
+# print(len(emp))
+# print(str(emp))
+# print(repr(emp))
+#These are being called in another file name Magic2.py,class employee is imported in 
+# other
