@@ -12,13 +12,13 @@ throwing error because name and age are now private variables and they cannot be
 accessed from outside the class
 
 '''
-class student:
-    def __init__(self,name,age):
-        self.__name=name      # indication of private variable
-        self.__age=age         # indication of private variable
-stud=student('Abhi',19)
-print(stud.name)
-print(stud.age)
+# class student:
+#     def __init__(self,name,age):
+#         self.__name=name      # indication of private variable
+#         self.__age=age         # indication of private variable
+# stud=student('Abhi',19)
+# print(stud.name)
+# print(stud.age)
 
 '''
 Name Mangling is a technique in python used to protect class-private and superclass
@@ -27,7 +27,7 @@ Provides a way to make an attribute "private" by using double underscore(__)
 
 but they can be accessed by using attribute's name with _ClassName
 '''
-class Name_Mangling():
+class Name_Mangling:
     def __init__(self):
         self.__Employee_name='Ankita Saini'
         self._age=19
@@ -38,3 +38,14 @@ print(object._Name_Mangling__Employee_name)
 print(object._Name_Mangling__occupation)
 # print(object.__Employee_name) #AttributeError: 'Name_Mangling' object has no attribute '__Employee_name'
 # print(object.__occupation) #also shows an error
+
+
+
+class school:
+    def __init__(self,name,studentsss):
+        self.__name=name
+        self.__student=studentsss
+st1=school('A',500)
+print(st1._school__name)
+print(st1._school__student) #__student (this should be equal not {studentsss})
+    
