@@ -102,6 +102,3 @@ str_1="He's alsoo a good man . he is is hardworking"
 print(str_1.swapcase())   #convert lower case to upper case and vice-versa
 
 
-
-
-
